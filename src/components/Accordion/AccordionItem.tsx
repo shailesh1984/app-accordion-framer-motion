@@ -32,7 +32,13 @@ export const AccordionItem = ({
   };
 
   // If browser's reduce motion settings are true, respect them otherwise use default animation
-  const transition = shouldReduceMotion ? { type: 'just' } : undefined;
+  const transition = shouldReduceMotion
+    ? { type: 'just' }
+    : {
+        duration: 0.1,
+        type: 'spring',
+        damping: 10,
+      };
 
   return (
     <li className="accordion__item">
@@ -60,6 +66,12 @@ export const AccordionItem = ({
             exit={'inactive'}
             variants={variants}
             transition={transition}
+            // transition={{
+            //   duration: 0.1,
+            //   type: 'spring',
+            //   damping: 10,
+            //   //stiffness: 500,
+            // }}
           >
             <p>{item.body}</p>
           </m.div>
