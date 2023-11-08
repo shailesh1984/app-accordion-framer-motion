@@ -1,0 +1,85 @@
+@use 'sass:math';
+
+/* @font-face {
+  font-family: "ABC Diatype";
+  src: url("fonts/ABCDiatype-Ultra-Trial.woff2") format("woff2"),
+    url("fonts/ABCDiatype-Ultra-Trial.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "ABC SimonMono";
+  src: url("fonts/ABCSimonMono-Light-Trial.woff2") format("woff2"),
+    url("fonts/ABCSimonMono-Light-Trial.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+} */
+
+$font-heading: 'Poppins', sans-serif;
+$font-body: 'Poppins', sans-serif;
+
+h1,
+h1,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-heading;
+}
+
+body {
+  font-size: math.div(16, 16) * 1rem;
+  font-family: $font-body;
+}
+
+header,
+footer {
+  padding: 10px;
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+main {
+  padding: 10px;
+  max-width: 768px;
+  margin: 10px auto 40px;
+
+  > h1 {
+    margin-bottom: 2rem;
+  }
+}
+
+footer > p {
+  text-align: right;
+  font-size: math.div(14, 16) * 1rem;
+}
+
+button {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+}
+
+.t-heading {
+  font-family: $font-heading;
+}
+
+a {
+  color: currentColor;
+}
+
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}

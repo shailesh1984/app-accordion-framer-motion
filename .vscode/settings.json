@@ -1,0 +1,26 @@
+{
+  "typescript.suggestionActions.enabled": false,
+  "typescript.validate.enable": true,
+  "javascript.suggestionActions.enabled": false,
+  "javascript.validate.enable": true,
+  "tailwindCSS.includeLanguages": {
+    "html": "html",
+    "javascript": "javascript",
+    "css": "css",
+    "scss": "scss",
+    "typescript": "typescript"
+  },
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "editor.formatOnSave": false,
+  "files.autoSave": "onFocusChange",
+  "eslint.validate": ["javascript"],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "css.validate": false,
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true
+}
