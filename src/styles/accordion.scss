@@ -1,4 +1,4 @@
-@use "sass:math";
+@use 'sass:math';
 
 .accordion {
   &__item {
@@ -7,7 +7,7 @@
     border-top: 1px solid black;
 
     &:last-child {
-        border-bottom: 1px solid black;
+      border-bottom: 1px solid black;
     }
 
     button {
@@ -16,6 +16,7 @@
       justify-content: space-between;
       align-items: center;
       font-size: math.div(22, 16) * 1rem;
+      cursor: pointer;
     }
 
     > div {
